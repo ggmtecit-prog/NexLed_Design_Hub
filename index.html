@@ -1,1 +1,126 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Nexled Brand Hub</title>
+
+    <!-- 1. Load Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- 2. Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 3. Configure Tailwind -->
+    <script src="src/config-cdn.js"></script>
+
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+            background-color: var(--colors-white, #FCFCFC);
+            scroll-behavior: smooth;
+        }
+
+        /* Glassmorphism using verification mapping */
+        .glass-panel {
+            background: rgba(252, 252, 252, 0.7);
+            /* white + 70% opacity */
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(252, 252, 252, 0.4);
+            box-shadow: var(--shadows-default);
+            border-radius: var(--radius-md);
+        }
+
+        .glass-card {
+            background: rgba(252, 252, 252, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(252, 252, 252, 0.4);
+            transition: all var(--motion-duration-default) var(--motion-ease-premium);
+            border-radius: var(--radius-lg);
+        }
+
+        .glass-card:hover {
+            transform: translateY(var(--interactive-lift-standard));
+            background: var(--colors-white);
+            box-shadow: var(--shadows-hover);
+            border-color: var(--colors-green-primary);
+        }
+    </style>
+</head>
+
+<body class="text-black selection:bg-green-primary/10 flex min-h-screen flex-col">
+
+
+    <!-- LANDING CONTENT -->
+    <main class="flex-1 my-auto px-32 pb-64 max-w-standard mx-auto w-full flex flex-col justify-center">
+
+        <!-- HERO -->
+        <header class="py-64 mb-48 text-center max-w-readable mx-auto">
+            <div
+                class="inline-flex items-center gap-12 px-16 py-8 rounded-full bg-green-primary/10 text-green-primary text-body-xs font-semibold mb-24 border border-green-primary/20">
+                <span>ECOSYSTEM HUB</span>
+                <span class="w-4 h-4 rounded-full bg-green-primary"></span>
+                <span>FEBRUARY 2026</span>
+            </div>
+            <h1 class="text-display font-semibold mb-24">Nexled Brand Hub</h1>
+            <p class="text-body-lg text-grey-primary font-light leading-relaxed">
+                Choose your destination within the Nexled design ecosystem.
+                Everything you need to build consistent, premium experiences.
+            </p>
+        </header>
+
+        <!-- HUB CARDS -->
+        <section class="mb-64">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-32 max-w-[900px] mx-auto">
+
+                <!-- Brand Guidelines Card -->
+                <a href="https://ggmtecit-prog.github.io/Nexled_Brand_Guidelines/index.html"
+                    class="glass-card p-40 group block">
+                    <div
+                        class="w-64 h-64 rounded-full bg-green-primary/10 flex items-center justify-center text-green-primary mb-24 group-hover:scale-hover transition-transform duration-default">
+                        <i class="ri-book-open-line text-display"></i>
+                    </div>
+                    <h3 class="text-h2 font-semibold mb-12 group-hover:text-green-primary transition-colors">Brand
+                        Guidelines</h3>
+                    <p class="text-body text-grey-primary leading-relaxed mb-24">
+                        Core identity, guidelines, and brand resources for the Nexled ecosystem.
+                    </p>
+                    <div class="flex items-center gap-8 text-green-primary font-semibold text-body-sm">
+                        <span>Explore Guidelines</span>
+                        <i class="ri-arrow-right-line transition-transform group-hover:translate-x-4"></i>
+                    </div>
+                </a>
+
+                <!-- UI System Card -->
+                <a href="https://ggmtecit-prog.github.io/NexLed_UI_System/index.html"
+                    class="glass-card p-40 group block">
+                    <div
+                        class="w-64 h-64 rounded-full bg-blue-primary/10 flex items-center justify-center text-blue-primary mb-24 group-hover:scale-hover transition-transform duration-default">
+                        <i class="ri-layout-masonry-line text-display"></i>
+                    </div>
+                    <h3 class="text-h2 font-semibold mb-12 group-hover:text-blue-primary transition-colors">UI System
+                    </h3>
+                    <p class="text-body text-grey-primary leading-relaxed mb-24">
+                        Official design system and component library for building NexLed interfaces.
+                    </p>
+                    <div class="flex items-center gap-8 text-blue-primary font-semibold text-body-sm">
+                        <span>View UI System</span>
+                        <i class="ri-arrow-right-line transition-transform group-hover:translate-x-4"></i>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
