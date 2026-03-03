@@ -10,7 +10,7 @@
     <!-- 1. Load Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -18,44 +18,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- 3. Configure Tailwind -->
-    <script src="https://ggmtecit-prog.github.io/NexLed_UI_System/src/config-cdn.js"></script>
-
-
-    <style>
-        body {
-            font-family: 'Urbanist', sans-serif;
-            background-color: var(--colors-white, #FCFCFC);
-            scroll-behavior: smooth;
-        }
-
-        /* Glassmorphism using verification mapping */
-        .glass-panel {
-            background: rgba(252, 252, 252, 0.7);
-            /* white + 70% opacity */
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(252, 252, 252, 0.4);
-            box-shadow: var(--shadows-default);
-            border-radius: var(--radius-md);
-        }
-
-        .glass-card {
-            background: rgba(252, 252, 252, 0.7);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(252, 252, 252, 0.4);
-            transition: all var(--motion-duration-default) var(--motion-ease-premium);
-            border-radius: var(--radius-lg);
-        }
-
-        .glass-card:hover {
-            transform: translateY(var(--interactive-lift-standard));
-            background: var(--colors-white);
-            box-shadow: var(--shadows-hover);
-            border-color: var(--colors-green-primary);
-        }
-    </style>
+    <script src="https://ggmtecit-prog.github.io/NexLed_UI_System/src/config-cdn.js?v=1.3"></script>
+    <link rel="stylesheet" href="https://ggmtecit-prog.github.io/NexLed_UI_System/src/nexled.css?v=1.3">
 </head>
 
-<body class="text-black selection:bg-green-primary/10 flex min-h-screen flex-col">
+<body class="bg-grey-tertiary text-black selection:bg-green-primary/10 flex min-h-screen flex-col">
 
 
     <!-- LANDING CONTENT -->
@@ -63,11 +30,8 @@
 
         <!-- HERO -->
         <header class="py-64 mb-48 text-center max-w-readable mx-auto">
-            <div
-                class="inline-flex items-center gap-12 px-16 py-8 rounded-full bg-green-primary/10 text-green-primary text-body-xs font-semibold mb-24 border border-green-primary/20">
-                <span>ECOSYSTEM HUB</span>
-                <span class="w-4 h-4 rounded-full bg-green-primary"></span>
-                <span>FEBRUARY 2026</span>
+            <div class="badge badge-primary badge-lg mb-24">
+                <span>Ecosystem Hub</span>
             </div>
             <h1 class="text-display font-semibold mb-24">Nexled Brand Hub</h1>
             <p class="text-body-lg text-grey-primary font-light leading-relaxed">
@@ -78,155 +42,78 @@
 
         <!-- HUB CARDS -->
         <section class="mb-64">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-32 max-w-[900px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-32 max-w-narrow mx-auto">
 
                 <!-- Brand Guidelines Card -->
-                <a href="https://ggmtecit-prog.github.io/Nexled_Brand_Guidelines/index.html"
-                    class="glass-card p-40 group block">
-                    <div
-                        class="w-64 h-64 rounded-full bg-green-primary/10 flex items-center justify-center text-green-primary mb-24 group-hover:scale-hover transition-transform duration-default">
-                        <i class="ri-book-open-line text-display"></i>
+                <div class="card p-24 max-w-sm">
+                    <div class="flex items-center gap-12 mb-16">
+                        <div
+                            class="w-48 h-48 bg-green-primary rounded-md flex items-center justify-center flex-shrink-0">
+                            <i class="ri-book-open-line text-icon-lg text-white"></i>
+                        </div>
+                        <h3 class="card-title mb-0">Brand Guidelines</h3>
                     </div>
-                    <h3 class="text-h2 font-semibold mb-12 group-hover:text-green-primary transition-colors">Brand
-                        Guidelines</h3>
-                    <p class="text-body text-grey-primary leading-relaxed mb-24">
+                    <p class="card-text mb-16">
                         Core identity, guidelines, and brand resources for the Nexled ecosystem.
                     </p>
-                    <div class="flex items-center gap-8 text-green-primary font-semibold text-body-sm">
-                        <span>Explore Guidelines</span>
-                        <i class="ri-arrow-right-line transition-transform group-hover:translate-x-4"></i>
-                    </div>
-                </a>
+                    <a href="https://ggmtecit-prog.github.io/Nexled_Brand_Guidelines/index.html"
+                        class="link">
+                        <span class="link-label">Explore Guidelines</span>
+                    </a>
+                </div>
 
                 <!-- UI System Card -->
-                <a href="https://ggmtecit-prog.github.io/NexLed_UI_System/index.html"
-                    class="glass-card p-40 group block">
-                    <div
-                        class="w-64 h-64 rounded-full bg-blue-primary/10 flex items-center justify-center text-blue-primary mb-24 group-hover:scale-hover transition-transform duration-default">
-                        <i class="ri-layout-masonry-line text-display"></i>
+                <div class="card p-24 max-w-sm">
+                    <div class="flex items-center gap-12 mb-16">
+                        <div
+                            class="w-48 h-48 bg-green-primary rounded-md flex items-center justify-center flex-shrink-0">
+                            <i class="ri-layout-masonry-line text-icon-lg text-white"></i>
+                        </div>
+                        <h3 class="card-title mb-0">UI System</h3>
                     </div>
-                    <h3 class="text-h2 font-semibold mb-12 group-hover:text-blue-primary transition-colors">UI System
-                    </h3>
-                    <p class="text-body text-grey-primary leading-relaxed mb-24">
+                    <p class="card-text mb-16">
                         Official design system and component library for building NexLed interfaces.
                     </p>
-                    <div class="flex items-center gap-8 text-blue-primary font-semibold text-body-sm">
-                        <span>View UI System</span>
-                        <i class="ri-arrow-right-line transition-transform group-hover:translate-x-4"></i>
-                    </div>
-                </a>
+                    <a href="https://ggmtecit-prog.github.io/NexLed_UI_System/index.html"
+                        class="link">
+                        <span class="link-label">View UI System</span>
+                    </a>
+                </div>
 
             </div>
         </section>
-
         <!-- INTRODUCTION (Slide 2) -->
         <section class="mb-64 py-64 border-t border-grey-tertiary">
-            <div class="max-w-readable mx-auto">
-                <h2 class="text-h1 font-semibold mb-32">Introduction</h2>
-                <div class="space-y-paragraph text-body-lg text-grey-primary leading-relaxed font-light">
+            <div class="w-full flex flex-col items-center text-center py-40 px-64 gap-24">
+                <!-- Title: Urbanist Medium 50px -->
+                <h2 class="text-hero-title font-medium text-black">
+                    Introduction
+                </h2>
+                <!-- Subtitle: Urbanist Light 22px -->
+                <div class="text-hero-subtitle font-light text-black max-w-readable space-y-paragraph">
                     <p>
-                        This document defines the visual and graphic system of Nexled. Its purpose is to align all
-                        communication
-                        and ensure consistency across every application.
+                        This document defines the visual and graphic system of Nexled, establishing guidelines for
+                        color, typography, composition, and graphic style to ensure consistency across every
+                        application. It also explains the strategic thinking behind the system and the decisions that
+                        shaped it.
                     </p>
                     <p>
-                        It establishes the guidelines for using the core visual elements color, typography, composition,
-                        and graphic
-                        style. These rules ensure that the identity is applied with precision, clarity, and respect for
-                        the brand’s values.
+                        Nexled was created within TEC IT to enter the LED lighting sector with a clear focus on
+                        technical quality and long-term performance. Rather than competing on price, the brand focuses
+                        on delivering high-quality, durable, and repairable LED solutions — building trust through
+                        engineering, precision, and responsible design. Its scale enables flexibility, allowing Nexled
+                        to adapt products and create tailored solutions for each client.
                     </p>
                     <p>
-                        The document also explains the design decisions behind the system. It presents the context of
-                        the brand,
-                        its evolution, and the strategic direction that supports its new positioning.
+                        As the brand prepares to expand from Portugal into Europe and beyond, a stronger and more
+                        coherent identity became essential. This rebranding initiative was proposed and developed by
+                        Gonçalo Mendonça, addressing missing fundamentals such as a defined color palette, mission,
+                        values, and a cohesive visual system. Some elements, like the logo, were retained due to legal
+                        constraints, but the result is a complete and functional identity built within those limits.
                     </p>
                     <p>
-                        Nexled goes beyond lighting, we build trust through engineering, durability, and responsible
-                        design. Our
-                        products are technical, repairable, and developed for a long service life. The visual identity
-                        must reflect
-                        these principles with the same level of quality, efficiency, and precision.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- BRAND MESSAGE (Slide 2) -->
-        <section class="mb-64">
-            <div
-                class="glass-panel p-48 max-w-standard mx-auto flex flex-col md:flex-row items-center gap-48 border-l-thick border-l-green-primary">
-                <div class="flex-1">
-                    <div class="flex items-center gap-12 text-green-primary mb-16">
-                        <i class="ri-checkbox-circle-line text-h2"></i>
-                        <span class="text-overline font-semibold tracking-wider">BRAND MESSAGE</span>
-                    </div>
-                    <blockquote class="text-h2 font-semibold text-black italic block mb-12 leading-tight">
-                        &ldquo;Nexled creates high-quality LED lighting solutions tailored to
-                        each project. Every product reflects our commitment to
-                        efficiency, precision, and long-term performance.&rdquo;
-                    </blockquote>
-                </div>
-                <div class="hidden md:block w-px h-120 bg-grey-tertiary"></div>
-                <div class="flex items-center gap-24">
-                    <div
-                        class="w-64 h-64 rounded-xl bg-green-primary/10 flex items-center justify-center text-green-primary">
-                        <i class="ri-lightbulb-flash-line text-h1"></i>
-                    </div>
-                    <div>
-                        <p class="text-body-sm font-semibold text-black">Technical Excellence</p>
-                        <p class="text-body-xs text-grey-primary">Engineering-driven core</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTEXT (Slide 3) -->
-        <section class="mb-64 py-64 border-t border-grey-tertiary">
-            <div class="max-w-readable mx-auto">
-                <h2 class="text-h1 font-semibold mb-32">Context</h2>
-                <div class="space-y-paragraph text-body text-grey-primary leading-relaxed">
-                    <p>
-                        Nexled is part of the TEC IT and was created to enter the LED lighting sector with a clear focus
-                        on technical quality and
-                        long-term performance. As a young brand, its identity and values were developed gradually,
-                        shaped by the needs of the
-                        market and the company’s engineering-driven approach.
-                    </p>
-                    <p>
-                        With the brand now more mature and consolidated, a rework of its values and visual identity
-                        became necessary. Over the
-                        years, Nexled positioned itself in the premium and technical segment of the market. As a smaller
-                        company, competing on
-                        price was never the goal. Instead, the brand focused on delivering high-quality, durable, and
-                        repairable LED solutions.
-                    </p>
-                    <p>
-                        The company’s scale also enables flexibility. Nexled can develop new features, adapt products,
-                        and create tailored solutions
-                        that meet the exact needs of each client. As the brand prepares to expand beyond the local
-                        Portuguese market into Europe
-                        and later into markets outside the EU a stronger and more coherent identity is essential.
-                    </p>
-                    <p>
-                        This rebranding initiative was proposed and developed by the author of this document, Gonçalo
-                        Mendonça. Through a
-                        detailed analysis, he identified several missing fundamentals in the brand’s structure, such as
-                        a defined color palette, mission,
-                        values, cohesive visual system among other things.
-                    </p>
-                    <p>
-                        Some elements, like the logo, could not be redesigned due to legal
-                        constraints, but the rebrand was developed within these limits to create a complete and
-                        functional identity system.
-                        This document presents the results of that work. It was created to guide future projects and
-                        support everyone involved in
-                        the brand’s communication.
-                    </p>
-                    <p>
-                        A brand is a living system it evolves with the company’s needs and the context in which it
-                        operates. For that reason, this Brand Book is a working document, supported by digital platforms
-                        where the information can
-                        be updated and accessed more efficiently.
+                        A brand is a living system. This Brand Book is a working document, supported by digital
+                        platforms to allow updates as the company and its context evolve.
                     </p>
                 </div>
             </div>
