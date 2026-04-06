@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <title>NexLed Brand Hub</title>
+    <title>NexLed Hub</title>
 
     <!-- 1. Load Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,12 +26,29 @@
     <main class="flex min-h-screen flex-col justify-center py-48 container-standard">
 
         <header class="page-header-hero container-readable mb-48">
-            <h1 class="text-hero-title text-black">NexLed Brand Hub</h1>
+            <div class="flex flex-wrap items-center gap-10 mb-16">
+                <span class="badge badge-primary badge-md">Hub</span>
+                <span class="badge badge-neutral badge-md">Everything NexLed</span>
+            </div>
+            <h1 class="text-hero-title text-black">NexLed Hub</h1>
             <p class="text-hero-subtitle text-black max-w-readable">
-                Choose the surface you need right now. The hub keeps brand direction and UI implementation
-                routes separated, clear, and one click away.
+                The central route to everything NexLed. Move between brand guidance, the live UI system,
+                support, and published tools from one place.
             </p>
         </header>
+
+        <section class="container-readable mb-24">
+            <div class="space-y-8">
+                <div class="flex flex-wrap items-center gap-10">
+                    <span class="badge badge-primary badge-sm">Design</span>
+                    <span class="badge badge-neutral badge-sm">Core References</span>
+                </div>
+                <h2 class="text-card-title text-black">Guidance and implementation</h2>
+                <p class="text-body-sm text-grey-primary max-w-readable">
+                    Start with the canonical sources for identity decisions and UI implementation work.
+                </p>
+            </div>
+        </section>
 
         <section class="container-narrow mb-48">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
@@ -44,7 +61,7 @@
                             <h3 class="card-title">Brand Guidelines</h3>
                         </div>
                         <p class="card-text">
-                            Core identity, language, and brand-direction guidance for the NexLed ecosystem.
+                            Identity system, messaging, and presentation guidance for the NexLed ecosystem.
                         </p>
                         <div class="card-actions">
                             <a href="https://ggmtecit-prog.github.io/Nexled_Brand_Guidelines/index.html"
@@ -64,7 +81,7 @@
                             <h3 class="card-title">UI System</h3>
                         </div>
                         <p class="card-text">
-                            The published NexLed component system, demo pages, and implementation contract.
+                            Published design system with components, demos, and implementation rules for production work.
                         </p>
                         <div class="card-actions">
                             <a href="https://ggmtecit-prog.github.io/NexLed_UI_System/index.html"
@@ -77,21 +94,24 @@
             </div>
         </section>
 
+        <section class="container-readable mb-24">
+            <div class="space-y-8">
+                <div class="flex flex-wrap items-center gap-10">
+                    <span class="badge badge-info badge-sm">Live Projects</span>
+                    <span class="badge badge-neutral badge-sm">Published Surfaces</span>
+                </div>
+                <h2 class="text-card-title text-black">Live routes across the NexLed ecosystem</h2>
+                <p class="text-body-sm text-grey-primary max-w-readable">
+                    Open the current public hub, brand, UI, support, and EPREL surfaces from the same launch point.
+                </p>
+            </div>
+        </section>
+
         <section class="mb-64">
             <div class="panel overflow-hidden">
-                <div
-                    class="p-24 border-b border-grey-tertiary bg-white/50 flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
-                    <div class="space-y-8">
-                        <div class="flex flex-wrap items-center gap-10">
-                            <span class="badge badge-info badge-sm">Live Projects</span>
-                            <span class="badge badge-neutral badge-sm">5 surfaces</span>
-                        </div>
-                        <h2 class="text-card-title text-black">All published NexLed projects</h2>
-                        <p class="text-body-sm text-grey-primary max-w-readable">
-                            The current live ecosystem links five public surfaces across hub routing, brand guidance,
-                            implementation, support, and EPREL tooling.
-                        </p>
-                    </div>
+                <div class="p-24 border-b border-grey-tertiary bg-white/50 flex flex-wrap items-center gap-10">
+                    <span class="badge badge-info badge-sm">5 surfaces</span>
+                    <span class="badge badge-neutral badge-sm">Hub + Brand + System + Support + Tooling</span>
                 </div>
                 <div class="p-24 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-24 bg-white">
                     <div class="card">
@@ -100,10 +120,10 @@
                                 <span class="badge badge-success badge-sm">Current</span>
                                 <span class="badge badge-info badge-sm">Launch Surface</span>
                             </div>
-                            <h3 class="card-title">NexLed Brand Hub</h3>
+                            <h3 class="card-title">NexLed Hub</h3>
                             <p class="card-text">
                                 The central routing page for the live NexLed ecosystem and the quickest way to move
-                                between brand and implementation work.
+                                between brand, system, support, and tooling work.
                             </p>
                             <a href="https://ggmtecit-prog.github.io/NexLed_Design_Hub/" class="link-text-icon link-md">
                                 <span class="link-label">Open live hub</span>
@@ -118,7 +138,7 @@
                                 <span class="badge badge-warning badge-sm">Brand</span>
                                 <span class="badge badge-neutral badge-sm">Guidance</span>
                             </div>
-                            <h3 class="card-title">Nexled Brand Guidelines</h3>
+                            <h3 class="card-title">NexLed Brand Guidelines</h3>
                             <p class="card-text">
                                 The live identity reference for language, presentation, and visual brand decisions
                                 across NexLed surfaces.
@@ -137,7 +157,7 @@
                                 <span class="badge badge-primary badge-sm">System</span>
                                 <span class="badge badge-neutral badge-sm">Implementation</span>
                             </div>
-                            <h3 class="card-title">Nexled - Design System</h3>
+                            <h3 class="card-title">NexLed Design System</h3>
                             <p class="card-text">
                                 The published design system with component docs, page demos, tokens, and build rules
                                 for implementation work.
@@ -156,7 +176,7 @@
                                 <span class="badge badge-info badge-sm">Support</span>
                                 <span class="badge badge-neutral badge-sm">Assistance</span>
                             </div>
-                            <h3 class="card-title">Suporte Nexled</h3>
+                            <h3 class="card-title">NexLed Support</h3>
                             <p class="card-text">
                                 The live support surface for help content, support routing, and direct access to the
                                 published assistance flow.
@@ -174,7 +194,7 @@
                                 <span class="badge badge-success badge-sm">Tool</span>
                                 <span class="badge badge-neutral badge-sm">EPREL</span>
                             </div>
-                            <h3 class="card-title">Nexled EPREL Tool</h3>
+                            <h3 class="card-title">NexLed EPREL Tool</h3>
                             <p class="card-text">
                                 The live EPREL utility for product-registration workflows and related compliance support.
                             </p>
